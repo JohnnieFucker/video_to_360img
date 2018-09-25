@@ -1,0 +1,53 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+* {
+    user-select: none;
+    -moz-user-select: none;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    background-color: Transparent;
+    color: #000;
+}
+
+::selection {
+    background-color: Transparent;
+    color: #000;
+}
+
+.layer-Container {
+    position: relative;
+    overflow: hidden;
+}
+
+.layer-Container .layer {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#main {
+    margin: auto;
+}
+
+#loading {
+    margin: 100px auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+input[type='image']:disabled {
+    opacity: 0.36;
+    filter: Alpha(Opacity=35);
+}

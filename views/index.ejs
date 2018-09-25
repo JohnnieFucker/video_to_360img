@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>360img</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<body>
+<div id="loading" style="display: block;">loading……</div>
+<div id="main" style="width: 1080px; height: 1080px; display: none;">
+    <div class="layer-Container" style="width: 1080px; height: 1080px;">
+        <img class="layer" id="360img" src="/images/frame-1.jpg" width="1080"
+             height="1080" style="top: 0px; left: 0px;">
+
+        <div class="layer" id="absDiv" style="width: 1080px; height: 1080px;"></div>
+        <div class="layer" id="zoomDiv" style="width: 1080px; height: 1080px;"></div>
+</div>
+<script type="text/javascript" src="/javascripts/360img.js"></script>
+<script>
+    var config = {speed: 1, noPhotos: 74};
+    threeSixty().init(config);
+</script>
+</body>
+</html>
